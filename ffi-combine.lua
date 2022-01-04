@@ -41,6 +41,7 @@ for i = 1, #arg do
   elseif string.sub(arg[i], 1, string.len(footerOption)) == footerOption then
     footerFileName = string.sub(arg[i], string.len(footerOption) + 1)
   else
+    print(arg[i])
     table.insert(inputFiles, arg[i])
   end
 end
